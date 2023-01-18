@@ -1,2 +1,5 @@
 # exercicios
- Exercícios em C
+
+Exercícios em C
+
+Criando meu repositorio
