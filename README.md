@@ -1,5 +1,4 @@
 # exercicios
 
-Exercícios em C
+Teste de nível em C
 
-Criando meu repositorio
