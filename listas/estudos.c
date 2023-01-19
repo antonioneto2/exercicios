@@ -17,7 +17,7 @@ void inverte(int vetor[], int n)
 int main()
 {
     int vetor[5] = {1, 2, 3, 4, 5};
-    inverter(vetor, 5);
+    inverte(vetor, 5);
     int cont;
     for (cont = 0; cont < 5; cont++)
     {
