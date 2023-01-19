@@ -9,5 +9,5 @@ int main()
     scanf("%f", &alt);
     imc = peso / pow(alt, 2);
     printf("Seu IMC = %.2f\n", imc);
-    // mudanças 2.0
+    // mudanças
 }
