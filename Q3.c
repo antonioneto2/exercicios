@@ -18,13 +18,20 @@ typedef struct aluno
 {
     char nome[50];
     int matricula;
-    Disciplina disciplina;
+    Disciplina *disciplina;
 } Aluno;
 
 int main()
 {
     Aluno aluno;
+    printf("Informe o nome: ");
+    scanf("%[^\n]", aluno.nome);
+    printf("Informe seu matricula: ");
+    scanf("%d", &aluno.matricula);
+    printf("Informe a disciplina: ");
+    scanf("%d", &aluno.disciplina.matricula);
+    printf("Informe seu carga horaria: ");
+    scanf("%d", &aluno.disciplina.carga_horaria);
 
-    aluno.disciplina.professor.nome = 'Neto';
     return 0;
 }
