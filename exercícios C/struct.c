@@ -14,7 +14,7 @@ typedef struct circulo
     float r;
 } Circulo;
 
-int interior(Circulo *c, Ponto *p)
+float interior(Circulo *c, Ponto *p)
 {
     float d = distancia(&c->p, p);
     return (d < c->r);
@@ -28,7 +28,11 @@ float distancia(Ponto *p, Ponto *q)
 
 int main()
 {
-    int i = interior(7, 8);
+    float i;
+    float n, n1;
+    n = 8;
+    n1 = 9;
+    i = interior(&n, &n1);
     if (i != 0)
     {
         printf("Verdadeiro");

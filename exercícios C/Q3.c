@@ -23,15 +23,15 @@ typedef struct aluno
 
 int main()
 {
-    Aluno aluno;
-    printf("Informe o nome: ");
-    scanf("%[^\n]", aluno.nome);
-    printf("Informe seu matricula: ");
-    scanf("%d", &aluno.matricula);
-    printf("Informe a disciplina: ");
-    scanf("%d", &aluno.disciplina.matricula);
-    printf("Informe seu carga horaria: ");
-    scanf("%d", &aluno.disciplina.carga_horaria);
-
+    Aluno *aluno = (Aluno *)malloc(sizeof(Aluno));
+    if (aluno == NULL)
+    {
+        exit(1);
+    }
+    aluno->disciplina = (Disciplina *)malloc(sizeof(Disciplina));
+    printf("Informe um nome: ");
+    scanf(" %[^\n]s", aluno->nome);
+    printf("Informe o nome da dsiciplina: ");
+    scanf(" %[^\n]s", aluno->disciplina->nome);
     return 0;
 }
